@@ -104,7 +104,7 @@ const App = () => {
 
         <nav>
           <a className="active">Dashboard</a>
-        
+
         </nav>
       </aside>
 
@@ -114,14 +114,14 @@ const App = () => {
             <h1>Smart Factory Dashboard</h1>
             <p>Last updated: {lastUpdated.toLocaleTimeString()}</p>
           </div>
-
-          <select
+          <div style={{ display: "flex", alignItems: "left", marginRight: "60px" }}> 
+            <select
             value={selectedRole}
             onChange={(event) => setSelectedRole(event.target.value as Role)}
           >
             <option value="Plant Manager">Plant Manager</option>
             <option value="Machine Operator">Machine Operator</option>
-          </select>
+          </select> </div>
         </header>
 
         <section className="stats-grid">
