@@ -104,9 +104,7 @@ const App = () => {
 
         <nav>
           <a className="active">Dashboard</a>
-          <a >Machines</a>
-          <a>Alerts</a>
-          <a>Reports</a>
+        
         </nav>
       </aside>
 
