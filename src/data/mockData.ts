@@ -29,15 +29,6 @@ export const machines: Machine[] = [
     assignedToOperator: false,
   },
   {
-    id: "M-104",
-    name: "Drilling Machine",
-    status: "Running",
-    location: "Line A",
-    productionCount: 1100,
-    temperature: 74,
-    assignedToOperator: false,
-  },
-  {
     id: "M-105",
     name: "Hydraulic Press",
     status: "Down",

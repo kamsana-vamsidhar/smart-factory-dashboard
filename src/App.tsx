@@ -80,14 +80,6 @@ const App = () => {
     0
   );
 
-  const getStatusClass = (status: MachineStatus) => {
-    return `badge status-${status.toLowerCase()}`;
-  };
-
-  const getSeverityClass = (severity: string) => {
-    return `badge severity-${severity.toLowerCase()}`;
-  };
-
   if (isLoading) {
     return (
       <div className="loading-screen">
@@ -200,7 +192,7 @@ const App = () => {
                       <td>{alert.machineName}</td>
                       <td>{alert.message}</td>
                       <td>
-                        <span className={getSeverityClass(alert.severity)}>
+                        <span>
                           {alert.severity}
                         </span>
                       </td>
@@ -249,7 +241,7 @@ const App = () => {
                       <td>{machine.name}</td>
                       <td>{machine.location}</td>
                       <td>
-                        <span className={getStatusClass(machine.status)}>
+                        <span>
                           {machine.status}
                         </span>
                       </td>
